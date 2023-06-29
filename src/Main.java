@@ -12,11 +12,11 @@ public class Main {
         for (String i: directories) {
             File newDirectory = new File("");
             if (i.equals("src") | i.equals("res") | i.equals("savegames") | i.equals("temp")) {
-                newDirectory = new File("Games/" + i);
+                newDirectory = new File("C:/Users/whats/Desktop/Games/" + i);
             } else if (i.equals("main") | i.equals("test")){
-                newDirectory = new File("Games/src/" + i);
+                newDirectory = new File("C:/Users/whats/Desktop/Games/src/" + i);
             } else {
-                newDirectory = new File("Games/res/" + i);
+                newDirectory = new File("C:/Users/whats/Desktop/Games/res/" + i);
             }
             if (newDirectory.exists()) {
                 newDirectory.delete();
@@ -29,7 +29,7 @@ public class Main {
         }
 
         for (String i: files) {
-            File newfile = new File("Games/src/main/"+i+".java");
+            File newfile = new File("C:/Users/whats/Desktop/Games/src/main/"+i+".java");
             try{
                 if (newfile.createNewFile()){
                     logs.append("Добавлен файл " +i + ".java в каталог src/main \n");
@@ -39,7 +39,7 @@ public class Main {
             }
         }
 
-        File temp = new File("Games/temp/temp.txt");
+        File temp = new File("C:/Users/whats/Desktop/Games/temp/temp.txt");
         try{
             if (temp.createNewFile()){
                 logs.append("Добавлен файл temp.txt в каталог temp \n");
