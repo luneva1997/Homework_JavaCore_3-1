@@ -3,6 +3,7 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 .idea/
+Homework_JavaCore_3-1.iml
 
 ### Eclipse ###
 .apt_generated
